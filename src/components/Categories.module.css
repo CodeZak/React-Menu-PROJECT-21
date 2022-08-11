@@ -1,0 +1,42 @@
+.categories {
+    display: flex;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    padding: 7px 15px;
+    margin: 0px 5px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--clr-gold);
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--clr-gold);
+    color: var(--clr-white);
+    cursor: pointer;
+    border-radius: var(--radius);
+    padding: 5px 15px;
+}
+
+@media (max-width: 430px) {
+    .categories {
+        padding: 20px 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    button {
+        padding: 7px 0px;
+        margin: 0px 10px;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: none;
+        color: var(--clr-gold);
+        transition: var(--transition);
+    }
+}
